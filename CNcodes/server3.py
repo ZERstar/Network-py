@@ -11,4 +11,4 @@ class Handler_TCPServer(socketserver.BaseRequestHandler):
 if __name__ == "__main__":
     HOST , PORT = "localhost", 9999
     tcp_server = socketserver.TCPServer((HOST , PORT), Handler_TCPServer)
-    tcp_server.server_forever()
+    tcp_server.serve_forever()
